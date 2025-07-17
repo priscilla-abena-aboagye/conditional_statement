@@ -1,5 +1,5 @@
 import random
-value = input("Enter a value (int or str): ")
+value = input("Enter a value (integer or string): ")
 
 match value:
     case int():
@@ -38,9 +38,10 @@ Inside the loop, add the current number (use the loop variable) to the total var
 After the loop, print the final total value, which represents the sum of all the numbers in the list.
 '''
 
-list_of_numbers = [1, 2, 3, 4, 5]
 sum = 0
-for number in list_of_numbers:
+
+for number in range(1, 11):
 	sum += number
 print(f"The sum of all the numbers is {sum}")
+
 
