@@ -9,18 +9,15 @@ match value:
     case _:
         print("Inavlid data type")
 
-age = input("Enter your age: ")
+age = int(input("Enter your age: "))
 match age:
-	case 18 | 19:
-		if age >= 18 and has_id(user):
-			print("You are eligible to vote")
-		else:
-			print("You need an id to vote")
+	case _ if age >= 18:
+		print("You are eligible to vote")
 	case _:
 		print("You are not eligible to vote")
 
 secret_number = random.randint(1, 10)
-guess = int(input("Enter your guess: ")) 
+guess = int(input("Enter a random number between 1 to 10: ")) 
 
 match guess:
 	case _ if guess == secret_number:
@@ -33,5 +30,17 @@ match guess:
 		print("That is an invalid guess")
 
 
+'''
+Create a list of numbers (e.g., numbers = [1, 5, 3, 9]).
+Initialize a variable total to 0, which will store the running sum.
+Use a for loop to iterate over the numbers list.
+Inside the loop, add the current number (use the loop variable) to the total variable.
+After the loop, print the final total value, which represents the sum of all the numbers in the list.
+'''
 
+list_of_numbers = [1, 2, 3, 4, 5]
+sum = 0
+for number in list_of_numbers:
+	sum += number
+print(f"The sum of all the numbers is {sum}")
 
