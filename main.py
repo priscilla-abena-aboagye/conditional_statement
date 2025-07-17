@@ -44,4 +44,16 @@ for number in range(1, 11):
 	sum += number
 print(f"The sum of all the numbers is {sum}")
 
+# Guessing game 
+guess_count = 0
+selected_number = random.randint(1, 20)
+user_guess = 0
 
+while user_guess != selected_number:
+	guess_count += 1
+	user_guess = int(input("Enter a number between 1 and 20: "))
+	if user_guess > selected_number:
+		print("Too high!.")
+	elif user_guess < selected_number:
+		print("Too Low!.")
+print(f"Congratulations! You guessed the number in {guess_count} attempts.")
