@@ -76,7 +76,7 @@ for number in range(1, 13):
 		product = i * number
 		print(f"{i} X {number} = {product:2}", end="\t")
 	print()
-'''
+
 
 # Triangle
 rows = 5
@@ -102,4 +102,14 @@ while i < len(a):
         print(a[i], b[j])
         j += 1
     i += 1
-     
+'''
+# Pyramid
+rows = 5
+
+while rows > 0:
+	columns = 0
+	while columns < rows:
+		multiple = "*" * columns 
+		print(multiple)
+		columns += 1
+	rows -= 1
