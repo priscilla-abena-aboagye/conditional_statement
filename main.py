@@ -57,3 +57,13 @@ while user_guess != selected_number:
 	elif user_guess < selected_number:
 		print("Too Low!.")
 print(f"Congratulations! You guessed the number in {guess_count} attempts.")
+
+# Counting down 
+outer_counter = 5
+
+while outer_counter > 0:
+	inner_counter = 1
+	while inner_counter <= outer_counter:
+		print(inner_counter, end="")
+		inner_counter += 1
+	outer_counter -= 1 
